@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/rispansive.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <title>Passwordify/login</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="loader">
+        <div class="sphere"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs>
+                <mask id="waves" maskUnits="userSpaceOnUse">
+                    <g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5,50 C25,50 30,20 50,20 C70,20 75,50 95,50"></path>
+                        <path d="M5,50 C25,50 30,20 50,20 C70,20 75,50 95,50"></path>
+                        <path d="M5,50 C25,50 30,80 50,80 C70,80 75,50 95,50"></path>
+                        <path d="M5,50 C25,50 30,80 50,80 C70,80 75,50 95,50"></path>
+                    </g>
+                </mask>
+                <mask id="blurriness" maskUnits="userSpaceOnUse">
+                    <g>
+                        <circle cx="50" cy="50" r="50" fill="white"></circle>
+                        <ellipse cx="50" cy="50" rx="25" ry="25" fill="black"></ellipse>
+                    </g>
+                </mask>
+                <mask id="clipping" maskUnits="userSpaceOnUse">
+                    <ellipse cx="50" cy="50" rx="25" ry="50" fill="white"></ellipse>
+                </mask>
+                <mask id="fade" maskUnits="userSpaceOnUse">
+                    <ellipse cx="50" cy="50" rx="45" ry="50" fill="white"></ellipse>
+                </mask>
+            </defs>
+            <g id="shapes" mask="url(#fade)">
+                <g mask="url(#clipping)">
+                    <circle cx="50" cy="50" r="50" fill="currentColor" mask="url(#waves)"></circle>
+                </g>
+                <g mask="url(#blurriness)">
+                    <circle cx="50" cy="50" r="50" fill="currentColor" mask="url(#waves)"></circle>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div class="start">
+        <div class="start_circle">
+            <span>START</span>
+        </div>
+    </div>
+    <div class="text">
+        <h3>Analyzing ...</h3>
+    </div>
+    <div class="check_items">
+        <div class="item">
+            <p>Log in checking</p>
+            <svg id="analiz1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="3" r="0" fill="currentColor">
+                    <animate id="SVGoB2HzdBp" attributeName="r" begin="0;SVGhp5IKccd.end-0.5s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="16.5" cy="4.21" r="0" fill="currentColor">
+                    <animate id="SVG13I3L3Mo" attributeName="r" begin="SVGoB2HzdBp.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="7.5" cy="4.21" r="0" fill="currentColor">
+                    <animate id="SVGhp5IKccd" attributeName="r" begin="SVGZh5n6c6U.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="19.79" cy="7.5" r="0" fill="currentColor">
+                    <animate id="SVGwdpSnbWm" attributeName="r" begin="SVG13I3L3Mo.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="4.21" cy="7.5" r="0" fill="currentColor">
+                    <animate id="SVGZh5n6c6U" attributeName="r" begin="SVGZlbpteod.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="21" cy="12" r="0" fill="currentColor">
+                    <animate id="SVGtZjtgdeT" attributeName="r" begin="SVGwdpSnbWm.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="3" cy="12" r="0" fill="currentColor">
+                    <animate id="SVGZlbpteod" attributeName="r" begin="SVGwTNtvelU.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="19.79" cy="16.5" r="0" fill="currentColor">
+                    <animate id="SVGtoLBIbcZ" attributeName="r" begin="SVGtZjtgdeT.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="4.21" cy="16.5" r="0" fill="currentColor">
+                    <animate id="SVGwTNtvelU" attributeName="r" begin="SVGk1PzexJH.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="16.5" cy="19.79" r="0" fill="currentColor">
+                    <animate id="SVGoTyDPewd" attributeName="r" begin="SVGtoLBIbcZ.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="7.5" cy="19.79" r="0" fill="currentColor">
+                    <animate id="SVGk1PzexJH" attributeName="r" begin="SVG0DUTaeRN.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="12" cy="21" r="0" fill="currentColor">
+                    <animate id="SVG0DUTaeRN" attributeName="r" begin="SVGoTyDPewd.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+            </svg>
+            <svg id="good1" class="good" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1200 1200">
+                <path fill="currentColor"
+                    d="M600 0C268.63 0 0 268.63 0 600s268.63 600 600 600s600-268.63 600-600S931.369 0 600 0m0 130.371c259.369 0 469.556 210.325 469.556 469.629S859.369 1069.556 600 1069.556c-259.37 0-469.556-210.251-469.556-469.556C130.445 340.696 340.63 130.371 600 130.371m229.907 184.717L482.153 662.915L369.36 550.122L258.691 660.718l112.793 112.793l111.401 111.401l110.597-110.669l347.826-347.754z" />
+            </svg>
+            <svg id="not_good1" class="not_good" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="currentColor">
+                    <path
+                        d="M8.478 8.478a1 1 0 0 1 1.414 0l2.154 2.153l2.153-2.153a1 1 0 1 1 1.414 1.414l-2.153 2.154l2.153 2.153a1 1 0 0 1-1.414 1.414l-2.153-2.153l-2.154 2.153A1 1 0 0 1 8.478 14.2l2.153-2.153l-2.153-2.154a1 1 0 0 1 0-1.414" />
+                    <path fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M4 12a8 8 0 1 1 16 0a8 8 0 0 1-16 0"
+                        clip-rule="evenodd" />
+                </g>
+            </svg>
+        </div>
+        <div class="item">
+            <p>Checking password security</p>
+            <svg id="analiz2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="3" r="0" fill="currentColor">
+                    <animate id="SVGoB2HzdBp" attributeName="r" begin="0;SVGhp5IKccd.end-0.5s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="16.5" cy="4.21" r="0" fill="currentColor">
+                    <animate id="SVG13I3L3Mo" attributeName="r" begin="SVGoB2HzdBp.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="7.5" cy="4.21" r="0" fill="currentColor">
+                    <animate id="SVGhp5IKccd" attributeName="r" begin="SVGZh5n6c6U.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="19.79" cy="7.5" r="0" fill="currentColor">
+                    <animate id="SVGwdpSnbWm" attributeName="r" begin="SVG13I3L3Mo.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="4.21" cy="7.5" r="0" fill="currentColor">
+                    <animate id="SVGZh5n6c6U" attributeName="r" begin="SVGZlbpteod.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="21" cy="12" r="0" fill="currentColor">
+                    <animate id="SVGtZjtgdeT" attributeName="r" begin="SVGwdpSnbWm.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="3" cy="12" r="0" fill="currentColor">
+                    <animate id="SVGZlbpteod" attributeName="r" begin="SVGwTNtvelU.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="19.79" cy="16.5" r="0" fill="currentColor">
+                    <animate id="SVGtoLBIbcZ" attributeName="r" begin="SVGtZjtgdeT.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="4.21" cy="16.5" r="0" fill="currentColor">
+                    <animate id="SVGwTNtvelU" attributeName="r" begin="SVGk1PzexJH.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="16.5" cy="19.79" r="0" fill="currentColor">
+                    <animate id="SVGoTyDPewd" attributeName="r" begin="SVGtoLBIbcZ.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="7.5" cy="19.79" r="0" fill="currentColor">
+                    <animate id="SVGk1PzexJH" attributeName="r" begin="SVG0DUTaeRN.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="12" cy="21" r="0" fill="currentColor">
+                    <animate id="SVG0DUTaeRN" attributeName="r" begin="SVGoTyDPewd.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+            </svg>
+            <svg id="good2" class="good" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1200 1200">
+                <path fill="currentColor"
+                    d="M600 0C268.63 0 0 268.63 0 600s268.63 600 600 600s600-268.63 600-600S931.369 0 600 0m0 130.371c259.369 0 469.556 210.325 469.556 469.629S859.369 1069.556 600 1069.556c-259.37 0-469.556-210.251-469.556-469.556C130.445 340.696 340.63 130.371 600 130.371m229.907 184.717L482.153 662.915L369.36 550.122L258.691 660.718l112.793 112.793l111.401 111.401l110.597-110.669l347.826-347.754z" />
+            </svg>
+            <svg id="not_good2" class="not_good" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="currentColor">
+                    <path
+                        d="M8.478 8.478a1 1 0 0 1 1.414 0l2.154 2.153l2.153-2.153a1 1 0 1 1 1.414 1.414l-2.153 2.154l2.153 2.153a1 1 0 0 1-1.414 1.414l-2.153-2.153l-2.154 2.153A1 1 0 0 1 8.478 14.2l2.153-2.153l-2.153-2.154a1 1 0 0 1 0-1.414" />
+                    <path fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M4 12a8 8 0 1 1 16 0a8 8 0 0 1-16 0"
+                        clip-rule="evenodd" />
+                </g>
+            </svg>
+        </div>
+        <div class="item">
+            <p>Checking your saved password</p>
+            <svg id="analiz3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="3" r="0" fill="currentColor">
+                    <animate id="SVGoB2HzdBp" attributeName="r" begin="0;SVGhp5IKccd.end-0.5s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="16.5" cy="4.21" r="0" fill="currentColor">
+                    <animate id="SVG13I3L3Mo" attributeName="r" begin="SVGoB2HzdBp.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="7.5" cy="4.21" r="0" fill="currentColor">
+                    <animate id="SVGhp5IKccd" attributeName="r" begin="SVGZh5n6c6U.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="19.79" cy="7.5" r="0" fill="currentColor">
+                    <animate id="SVGwdpSnbWm" attributeName="r" begin="SVG13I3L3Mo.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="4.21" cy="7.5" r="0" fill="currentColor">
+                    <animate id="SVGZh5n6c6U" attributeName="r" begin="SVGZlbpteod.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="21" cy="12" r="0" fill="currentColor">
+                    <animate id="SVGtZjtgdeT" attributeName="r" begin="SVGwdpSnbWm.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="3" cy="12" r="0" fill="currentColor">
+                    <animate id="SVGZlbpteod" attributeName="r" begin="SVGwTNtvelU.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="19.79" cy="16.5" r="0" fill="currentColor">
+                    <animate id="SVGtoLBIbcZ" attributeName="r" begin="SVGtZjtgdeT.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="4.21" cy="16.5" r="0" fill="currentColor">
+                    <animate id="SVGwTNtvelU" attributeName="r" begin="SVGk1PzexJH.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="16.5" cy="19.79" r="0" fill="currentColor">
+                    <animate id="SVGoTyDPewd" attributeName="r" begin="SVGtoLBIbcZ.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="7.5" cy="19.79" r="0" fill="currentColor">
+                    <animate id="SVGk1PzexJH" attributeName="r" begin="SVG0DUTaeRN.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="12" cy="21" r="0" fill="currentColor">
+                    <animate id="SVG0DUTaeRN" attributeName="r" begin="SVGoTyDPewd.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+            </svg>
+            <svg id="good3" class="good" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1200 1200">
+                <path fill="currentColor"
+                    d="M600 0C268.63 0 0 268.63 0 600s268.63 600 600 600s600-268.63 600-600S931.369 0 600 0m0 130.371c259.369 0 469.556 210.325 469.556 469.629S859.369 1069.556 600 1069.556c-259.37 0-469.556-210.251-469.556-469.556C130.445 340.696 340.63 130.371 600 130.371m229.907 184.717L482.153 662.915L369.36 550.122L258.691 660.718l112.793 112.793l111.401 111.401l110.597-110.669l347.826-347.754z" />
+            </svg>
+            <svg id="not_good3" class="not_good" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="currentColor">
+                    <path
+                        d="M8.478 8.478a1 1 0 0 1 1.414 0l2.154 2.153l2.153-2.153a1 1 0 1 1 1.414 1.414l-2.153 2.154l2.153 2.153a1 1 0 0 1-1.414 1.414l-2.153-2.153l-2.154 2.153A1 1 0 0 1 8.478 14.2l2.153-2.153l-2.153-2.154a1 1 0 0 1 0-1.414" />
+                    <path fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M4 12a8 8 0 1 1 16 0a8 8 0 0 1-16 0"
+                        clip-rule="evenodd" />
+                </g>
+            </svg>
+        </div>
+        <div class="item">
+            <p>Checking Passwordify server</p>
+            <svg id="analiz4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="3" r="0" fill="currentColor">
+                    <animate id="SVGoB2HzdBp" attributeName="r" begin="0;SVGhp5IKccd.end-0.5s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="16.5" cy="4.21" r="0" fill="currentColor">
+                    <animate id="SVG13I3L3Mo" attributeName="r" begin="SVGoB2HzdBp.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="7.5" cy="4.21" r="0" fill="currentColor">
+                    <animate id="SVGhp5IKccd" attributeName="r" begin="SVGZh5n6c6U.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="19.79" cy="7.5" r="0" fill="currentColor">
+                    <animate id="SVGwdpSnbWm" attributeName="r" begin="SVG13I3L3Mo.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="4.21" cy="7.5" r="0" fill="currentColor">
+                    <animate id="SVGZh5n6c6U" attributeName="r" begin="SVGZlbpteod.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="21" cy="12" r="0" fill="currentColor">
+                    <animate id="SVGtZjtgdeT" attributeName="r" begin="SVGwdpSnbWm.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="3" cy="12" r="0" fill="currentColor">
+                    <animate id="SVGZlbpteod" attributeName="r" begin="SVGwTNtvelU.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="19.79" cy="16.5" r="0" fill="currentColor">
+                    <animate id="SVGtoLBIbcZ" attributeName="r" begin="SVGtZjtgdeT.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="4.21" cy="16.5" r="0" fill="currentColor">
+                    <animate id="SVGwTNtvelU" attributeName="r" begin="SVGk1PzexJH.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="16.5" cy="19.79" r="0" fill="currentColor">
+                    <animate id="SVGoTyDPewd" attributeName="r" begin="SVGtoLBIbcZ.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="7.5" cy="19.79" r="0" fill="currentColor">
+                    <animate id="SVGk1PzexJH" attributeName="r" begin="SVG0DUTaeRN.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+                <circle cx="12" cy="21" r="0" fill="currentColor">
+                    <animate id="SVG0DUTaeRN" attributeName="r" begin="SVGoTyDPewd.begin+0.1s" calcMode="spline"
+                        dur="0.6s" keySplines=".27,.42,.37,.99;.53,0,.61,.73" values="0;2;0" />
+                </circle>
+            </svg>
+            <svg id="good4" class="good" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1200 1200">
+                <path fill="currentColor"
+                    d="M600 0C268.63 0 0 268.63 0 600s268.63 600 600 600s600-268.63 600-600S931.369 0 600 0m0 130.371c259.369 0 469.556 210.325 469.556 469.629S859.369 1069.556 600 1069.556c-259.37 0-469.556-210.251-469.556-469.556C130.445 340.696 340.63 130.371 600 130.371m229.907 184.717L482.153 662.915L369.36 550.122L258.691 660.718l112.793 112.793l111.401 111.401l110.597-110.669l347.826-347.754z" />
+            </svg>
+            <svg id="not_good4" class="not_good" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="currentColor">
+                    <path
+                        d="M8.478 8.478a1 1 0 0 1 1.414 0l2.154 2.153l2.153-2.153a1 1 0 1 1 1.414 1.414l-2.153 2.154l2.153 2.153a1 1 0 0 1-1.414 1.414l-2.153-2.153l-2.154 2.153A1 1 0 0 1 8.478 14.2l2.153-2.153l-2.153-2.154a1 1 0 0 1 0-1.414" />
+                    <path fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2M4 12a8 8 0 1 1 16 0a8 8 0 0 1-16 0"
+                        clip-rule="evenodd" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <div style="display: flex;align-items: center;justify-content: center
+    ;text-align: center;margin-top: 20px;"><p class="ways"></p></div>
+
+    <div class="back_btn">
+        <a href="../index.html"><button>HOME</button></a>
+    </div>
+    <script src="../js/analiz_js.js"></script>
+
+</body>
+
+</html>

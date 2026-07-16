@@ -1,0 +1,36 @@
+@media only screen and (max-width:408px) {
+    .buttons button {
+        height: 34px;
+    }
+
+    .buttons svg {
+        height: 18px;
+        width: 18px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+
+}
+
+@media only screen and (max-width:708px) {
+    .box {
+        width: 30%;
+    }
+
+    #cancle2,
+    #next2,
+    #cancle,
+    #next {
+        width: 85px;
+        font-size: 13px;
+    }
+
+    #next svg,#next2 svg {
+        width: 13px;
+        height: 13px;
+    }
+
+}
